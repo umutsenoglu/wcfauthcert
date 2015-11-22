@@ -242,7 +242,11 @@
       <wsa10:EndpointReference>
         <wsa10:Address>http://localhost:8733/Design_Time_Addresses/WcfServiceLibrary1/Service1/</wsa10:Address>
         <Identity xmlns="http://schemas.xmlsoap.org/ws/2006/02/addressingidentity">
-          <Dns>localhost</Dns>
+          <KeyInfo xmlns="http://www.w3.org/2000/09/xmldsig#">
+            <X509Data>
+              <X509Certificate>MIIDDjCCAfqgAwIBAgIQapX+kow0aoBHmWKY3hxRmzAJBgUrDgMCHQUAMBYxFDASBgNVBAMTC3djZmF1dGhjZXJ0MB4XDTEyMTIzMTIyMDAwMFoXDTI5MTIzMTIyMDAwMFowFjEUMBIGA1UEAxMLd2NmYXV0aGNlcnQwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQCWSUOKF4Grck5uOmDXcG7RH1Z2S+dJ/71zIjdizG4AKm2eWsExHmdx6jJPJI84tKf3qI6ii+3F2afXxRKFmkNXm79xydHN1I7j61cnhsfT59h8q9tpl2YkyAGU9BSKKbEWoIEqOVIGpdr7OeEWuwPm4xwtRcBjW3DRI4b98lKxVUtFFM2bkGH7JhRfKIEuF48h/fBx7xim6d2Ej5KncmlqdETGiuVpsHn0zwhlpdwxIYW6YuTOkN7JcvdNUzTvVAm3309e1ZL8AwOXCEjiV8Qwgpa1+0xhLxLczc6DdBqVwbh1+TbBR+JHtNdOU3G0HYuBsAGBNqXZdiNJT1RNKwtFAgMBAAGjYDBeMBMGA1UdJQQMMAoGCCsGAQUFBwMBMEcGA1UdAQRAMD6AENw9jX6iz9z4OH1QQyyXG2ihGDAWMRQwEgYDVQQDEwt3Y2ZhdXRoY2VydIIQapX+kow0aoBHmWKY3hxRmzAJBgUrDgMCHQUAA4IBAQBq+CbeBayz2gB9jKtwSZTT/XpeoS0/XCXjDuUyd/aDMfh9KHxjWNdKAw2R/Wpi/+2yutoCMqrrqad/7dGgUSwyCgUf4Hg6OTcfPpFpDSpVEUCgkEqK90SP8Z4XfAVv92nrXeVk+Bt7hluckkkG/5CxSrxWxJf3kxjfGZkfVs7KdTJuDcVM8MkzmvQuTOtKnPUAnnzzCayxmEnyy1eF/r73RveU3O+mfUYbUcZDz6hcIuGBkTjMHeFk93Lichp9GRS1l/l1w+yX/P7XFrQYa9jseaR55BJWXGoHJiA0MMxV0SvoCQtQ1d5xYz5tk8oRuLD/T+TcP/OxbxCROSaJe3tZ</X509Certificate>
+            </X509Data>
+          </KeyInfo>
         </Identity>
       </wsa10:EndpointReference>
     </wsdl:port>

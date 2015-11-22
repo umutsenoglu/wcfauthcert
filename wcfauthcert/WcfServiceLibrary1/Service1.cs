@@ -12,7 +12,9 @@ namespace WcfServiceLibrary1
     {
         public string GetData(int value)
         {
-            return string.Format("You entered: {0}", value);
+            var userName = OperationContext.Current.ServiceSecurityContext.PrimaryIdentity.Name;
+            object[] args = new object[] { userName, value };
+            return string.Format("Hello {0}. You entered: {1}", args);
         }
 
         public CompositeType GetDataUsingDataContract(CompositeType composite)

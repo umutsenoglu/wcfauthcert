@@ -1,8 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.ServiceModel.Security;
 
 namespace ConsoleApplication1
 {
@@ -11,6 +8,9 @@ namespace ConsoleApplication1
         static void Main(string[] args)
         {
             var client = new ServiceReference1.Service1Client();
+            client.ClientCredentials.UserName.UserName = "Tony";
+            client.ClientCredentials.UserName.Password = "abc";
+            client.ClientCredentials.ServiceCertificate.Authentication.CertificateValidationMode = X509CertificateValidationMode.None;
             var value = client.GetData(77);
             Console.WriteLine(value);
             Console.ReadLine();
