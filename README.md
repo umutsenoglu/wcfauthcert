@@ -1,7 +1,6 @@
 # wcfauthcert
 It sends client credentials to wcf server using certificate and wshttpbinding. You can idendify the client. Authentication and authorisation.
 
-Welcome to the wcfauthcert wiki!
 
 ## 1. Create a wcf server
 Click Visual Studio > File > New > Project > WCF Service Library
